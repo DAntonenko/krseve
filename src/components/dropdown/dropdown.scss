@@ -3,53 +3,10 @@
 .dropdown {
   position: relative;
 
-  &__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: $background-pale;
-    border-radius: 50%;
-    cursor: pointer;
-
-    &:hover {
-      border: 1px solid $blue-normal;
-    }
-
-    &-dot,
-    &-dot::before,
-    &-dot::after {
-      width: 4px;
-      height: 4px;
-      background-color: $blue-normal;
-      border-radius: 50%;
-    }
-
-    &-dot {
-      position: relative;
-    }
-
-    &-dot::before,
-    &-dot::after {
-      content: '';
-      display: block;
-      position: absolute;
-    }
-
-    &-dot::before {
-      top: -6px;
-    }
-
-    &-dot::after {
-      bottom: -6px;
-    }
-  }
-
   &__menu {
     position: absolute;
     left: -355px;
-    top: 0px;
+    top: 48px;
     width: 395px;
     background-color: $white;
     border-radius: 2px;

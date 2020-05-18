@@ -1,0 +1,19 @@
+@import '../../variables.scss';
+
+.dropdown-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: $background-pale;
+  background-image: url('../../images/icons/kebab.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $blue-normal;
+  }
+}

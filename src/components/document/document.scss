@@ -9,28 +9,27 @@
     height: 42px;
 
     &--docx {
-      background-image: url('../../images/icons/File-docx.svg');
+      background-image: url('../../images/icons/file-docx.svg');
     }
 
     &--exc {
-      background-image: url('../../images/icons/File-exc.svg');
+      background-image: url('../../images/icons/file-exc.svg');
     }
 
     &--pdf {
-      background-image: url('../../images/icons/File-pdf.svg');
+      background-image: url('../../images/icons/file-pdf.svg');
     }
 
     &--rar {
-      background-image: url('../../images/icons/File-rar.svg');
+      background-image: url('../../images/icons/file-rar.svg');
     }
 
     &--zip {
-      background-image: url('../../images/icons/File-zip.svg');
+      background-image: url('../../images/icons/file-zip.svg');
     }
   }
 
   &__info {
-    width: 224px;
     padding: 0 4px 0 4px;
   }
 
@@ -56,5 +55,5 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.25px;
-  color: #7A7A7C;
+  color: $dark-grey;
 }

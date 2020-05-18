@@ -23,6 +23,7 @@ export class Dropdown extends React.Component<IDropdownProps, IDropdownState> {
   public render() {
     const {
       options,
+      children,
     } = this.props
 
     const {
@@ -30,13 +31,11 @@ export class Dropdown extends React.Component<IDropdownProps, IDropdownState> {
     } = this.state
 
     return (
-      <div className='dropdown className'>
-        <div
-          className='dropdown__icon'
-          onClick={this.onIconClick}
-        >
-          <div className='dropdown__icon-dot' />
-        </div>
+      <div
+        className='dropdown className'
+        onClick={this.onClick}
+      >
+        {children}
         {isMenuOpen &&
           <ul className='dropdown__menu'>
             {options.map((option) => (
@@ -52,9 +51,9 @@ export class Dropdown extends React.Component<IDropdownProps, IDropdownState> {
     )
   }
 
-  private onIconClick = () => {
-    this.setState({
-      isMenuOpen: true,
-    });
+  private onClick = () => {
+    this.setState((prevState: IDropdownState) => ({
+      isMenuOpen: !prevState.isMenuOpen,
+    }));
   }
 }
