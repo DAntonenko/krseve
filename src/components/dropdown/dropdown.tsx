@@ -1,0 +1,60 @@
+import * as React from 'react';
+import './dropdown.scss';
+
+interface IMenuOptions {
+  name: string;
+  isDisabled?: boolean;
+}
+
+export interface IDropdownProps {
+ options: IMenuOptions[];
+ className?: string;
+}
+
+export interface IDropdownState {
+  isMenuOpen: boolean;
+}
+
+export class Dropdown extends React.Component<IDropdownProps, IDropdownState> {
+  public state: IDropdownState = {
+    isMenuOpen: false,
+  }
+
+  public render() {
+    const {
+      options,
+    } = this.props
+
+    const {
+      isMenuOpen,
+    } = this.state
+
+    return (
+      <div className='dropdown className'>
+        <div
+          className='dropdown__icon'
+          onClick={this.onIconClick}
+        >
+          <div className='dropdown__icon-dot' />
+        </div>
+        {isMenuOpen &&
+          <ul className='dropdown__menu'>
+            {options.map((option) => (
+              <li
+                className={`dropdown__menu-option ${option.isDisabled && 'dropdown__menu-option--disabled'}`}
+              >
+                {option.name}
+              </li>
+            ))}
+          </ul>
+        }
+      </div>
+    )
+  }
+
+  private onIconClick = () => {
+    this.setState({
+      isMenuOpen: true,
+    });
+  }
+}

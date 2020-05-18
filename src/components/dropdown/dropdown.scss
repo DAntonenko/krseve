@@ -1,0 +1,78 @@
+@import '../../variables.scss';
+
+.dropdown {
+  position: relative;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: $background-pale;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid $blue-normal;
+    }
+
+    &-dot,
+    &-dot::before,
+    &-dot::after {
+      width: 4px;
+      height: 4px;
+      background-color: $blue-normal;
+      border-radius: 50%;
+    }
+
+    &-dot {
+      position: relative;
+    }
+
+    &-dot::before,
+    &-dot::after {
+      content: '';
+      display: block;
+      position: absolute;
+    }
+
+    &-dot::before {
+      top: -6px;
+    }
+
+    &-dot::after {
+      bottom: -6px;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    left: -355px;
+    top: 0px;
+    width: 395px;
+    background-color: $white;
+    border-radius: 2px;
+    box-shadow: 12px 12px 24px rgba(35, 111, 153, 0.04);
+  }
+
+  &__menu-option {
+    padding: 16px 48px 16px 24px;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $background-pale;
+    }
+
+    &--disabled {
+      color: $dark-grey;
+      cursor: initial;
+
+      &:hover {
+        background-color: initial;
+      }
+    }
+  }
+}

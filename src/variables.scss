@@ -1,0 +1,94 @@
+/* stylelint-disable */
+
+// new theme colors
+$black: #000;
+$dark-grey: #7a7a7c;
+$light-grey: #9c9d9e;
+$light: #eee;
+$disabled: #f9f9f9;
+$white: #fff;
+$orange: #ff8515;
+$transparent: transparent;
+
+$blue-active: #233de0;
+$blue-normal: #6177FF;
+$blue-hover: #788bfb;
+$blue-disabled: #d5dceb;
+$blue-light: #f2f5fe;
+$dark-blue: #2C386B;
+
+$error: #db4444;
+$errorActive: #bb2929;
+$errorHover: #f86464;
+
+//new design box-shadow
+$box-shadow: 0 0 24px rgba(213, 220, 235, 0.3);
+
+// new border-radius
+$border-radius-32: 32px;
+$border-radius-24: 24px;
+$border-radius-28: 28px;
+$border-radius-8: 8px;
+$border-radius-0: 0;
+
+
+@mixin setFont($size: 16px, $lineHeight: 24px, $weight: normal, $color: $dark-grey) {
+  font: {
+    size: $size;
+    weight: $weight;
+  }
+
+  line-height: $lineHeight;
+  color: $color;
+}
+
+$box-shadow: 0 0 24px rgba(213, 220, 235, 0.3);
+
+
+//start old design
+
+// theme colors
+$brand-color: #56bdff;
+$muted-color: #e3e1f3;
+$background-color: #f7f7fb;
+$badge-background: #b63333;
+$dark: #15122f;
+$primary: #656289;
+$blue: #3f75ff;
+$black-text: #000;
+
+// text colors
+$muted-text-color: #a2a1bb;
+$dark-text: #15122f;
+$primary-text: #656289;
+$error-text: #eb5757;
+
+// main theme
+$main: #0a2750;
+$secondary: #3579b8;
+$third: #a2a1bb;
+$fourth: #dff0ff;
+$background: #f7f7fb;
+$accent: #0047ff;
+$green: #30ca89;
+$expansion-panel-box-shadow-color: rgba(32, 28, 77, 0.16);
+
+//border radius
+$borderRadiusBig: 32px;
+$borderRadiusSmall: 8px;
+
+// breakpoints
+$breakpoint-extra-large: 1200px;
+$breakpoint-large: 992px;
+$breakpoint-medium: 768px;
+$breakpoint-small: 576px;
+
+// Form
+$form-max-width: 904px;
+
+// sizes
+$input-height: 42px;
+
+// corus
+$background-pale: #F2F5FE;
+$brand-primary-01: $brand-color;
