@@ -4,14 +4,13 @@
   position: relative;
   outline: none;
 
+  // Софья Кожевникова: значения left и right относительно положения дропдауна на экране следует считать на фронте
   &__menu {
     position: absolute;
-    left: -355px;
-    top: 48px;
     width: 395px;
     background-color: $white;
     border-radius: 2px;
-    box-shadow: 12px 12px 24px rgba(35, 111, 153, 0.04);
+    box-shadow: 12px -12px 24px rgba(35, 111, 153, 0.04);
   }
 
   &__menu-option {
