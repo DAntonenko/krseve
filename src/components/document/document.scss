@@ -1,8 +1,7 @@
-@import '../../variables.scss';
+@import '../../common_styles/variables.scss';
 
 .document {
   display: flex;
-  cursor: pointer;
 
   &__icon {
     width: 42px;

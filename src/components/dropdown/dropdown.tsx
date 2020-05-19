@@ -32,7 +32,7 @@ export class Dropdown extends React.Component<IDropdownProps, IDropdownState> {
 
     return (
       <div
-        className='dropdown className'
+        className='dropdown'
         onClick={this.onClick}
       >
         {children}
