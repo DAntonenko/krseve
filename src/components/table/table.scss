@@ -1,0 +1,53 @@
+@import '../../common_styles/variables.scss';
+
+.table {
+  position: relative;
+  width: 100%;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  // overflow: hidden;
+
+  
+  &__header-cell {
+    height: 64px;
+    color: $light-grey;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+  }
+
+  &__header-cell:first-child,
+  &__cell:first-child {
+    // position: absolute;
+    width: 549px;
+    padding-left: 24px;
+    // background-color: mediumturquoise;
+  }
+
+  &__header-cell:nth-child(2),
+  &__cell:nth-child(2) {
+    // padding-left: 549px;
+    // background-color: maroon;
+  }
+
+  &__header-note {
+    text-transform: none;
+  }
+
+  &__cell {
+    display: flex;
+  }
+
+  &__item-number {
+    margin-right: 8px;
+
+    &--sublist-level-2 {
+      padding-left: 44px;
+    }
+  }
+}
